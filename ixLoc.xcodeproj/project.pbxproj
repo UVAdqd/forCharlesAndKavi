@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		6AF1CE4F1F0BD0E300F5971D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE4E1F0BD0E300F5971D /* AppDelegate.swift */; };
-		6AF1CE511F0BD0E300F5971D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE501F0BD0E300F5971D /* ViewController.swift */; };
+		6AF1CE511F0BD0E300F5971D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE501F0BD0E300F5971D /* MapViewController.swift */; };
 		6AF1CE541F0BD0E300F5971D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF1CE521F0BD0E300F5971D /* Main.storyboard */; };
 		6AF1CE561F0BD0E300F5971D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF1CE551F0BD0E300F5971D /* Assets.xcassets */; };
 		6AF1CE591F0BD0E300F5971D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF1CE571F0BD0E300F5971D /* LaunchScreen.storyboard */; };
 		6AF1CE641F0BD0E300F5971D /* ixLocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE631F0BD0E300F5971D /* ixLocTests.swift */; };
 		6AF1CE6F1F0BD0E300F5971D /* ixLocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE6E1F0BD0E300F5971D /* ixLocUITests.swift */; };
+		6AF1CE7D1F0BD47E00F5971D /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE7C1F0BD47E00F5971D /* ActivityTableViewController.swift */; };
+		6AF1CE7F1F0BD5B500F5971D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE7E1F0BD5B500F5971D /* Activity.swift */; };
+		6AF1CE831F0BE33C00F5971D /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE821F0BE33C00F5971D /* AddActivityViewController.swift */; };
+		6AF1CE851F0CE51800F5971D /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE841F0CE51800F5971D /* SettingTableViewController.swift */; };
+		6AF1CE871F0CE99900F5971D /* yao_300_051215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AF1CE861F0CE99900F5971D /* yao_300_051215.jpg */; };
+		6AF1CE891F0D15BA00F5971D /* AddActivityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1CE881F0D15BA00F5971D /* AddActivityDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		6AF1CE4B1F0BD0E300F5971D /* ixLoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ixLoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF1CE4E1F0BD0E300F5971D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6AF1CE501F0BD0E300F5971D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AF1CE501F0BD0E300F5971D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		6AF1CE531F0BD0E300F5971D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AF1CE551F0BD0E300F5971D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF1CE581F0BD0E300F5971D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		6AF1CE6A1F0BD0E300F5971D /* ixLocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ixLocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF1CE6E1F0BD0E300F5971D /* ixLocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ixLocUITests.swift; sourceTree = "<group>"; };
 		6AF1CE701F0BD0E300F5971D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF1CE7C1F0BD47E00F5971D /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		6AF1CE7E1F0BD5B500F5971D /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		6AF1CE821F0BE33C00F5971D /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		6AF1CE841F0CE51800F5971D /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		6AF1CE861F0CE99900F5971D /* yao_300_051215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yao_300_051215.jpg; path = ../../../Downloads/yao_300_051215.jpg; sourceTree = "<group>"; };
+		6AF1CE881F0D15BA00F5971D /* AddActivityDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				6AF1CE4E1F0BD0E300F5971D /* AppDelegate.swift */,
-				6AF1CE501F0BD0E300F5971D /* ViewController.swift */,
+				6AF1CE501F0BD0E300F5971D /* MapViewController.swift */,
 				6AF1CE521F0BD0E300F5971D /* Main.storyboard */,
+				6AF1CE7E1F0BD5B500F5971D /* Activity.swift */,
+				6AF1CE7C1F0BD47E00F5971D /* ActivityTableViewController.swift */,
 				6AF1CE551F0BD0E300F5971D /* Assets.xcassets */,
-				6AF1CE571F0BD0E300F5971D /* LaunchScreen.storyboard */,
+				6AF1CE861F0CE99900F5971D /* yao_300_051215.jpg */,
 				6AF1CE5A1F0BD0E300F5971D /* Info.plist */,
+				6AF1CE571F0BD0E300F5971D /* LaunchScreen.storyboard */,
+				6AF1CE821F0BE33C00F5971D /* AddActivityViewController.swift */,
+				6AF1CE841F0CE51800F5971D /* SettingTableViewController.swift */,
+				6AF1CE881F0D15BA00F5971D /* AddActivityDelegate.swift */,
 			);
 			path = ixLoc;
 			sourceTree = "<group>";
@@ -233,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AF1CE591F0BD0E300F5971D /* LaunchScreen.storyboard in Resources */,
+				6AF1CE871F0CE99900F5971D /* yao_300_051215.jpg in Resources */,
 				6AF1CE561F0BD0E300F5971D /* Assets.xcassets in Resources */,
 				6AF1CE541F0BD0E300F5971D /* Main.storyboard in Resources */,
 			);
@@ -259,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AF1CE511F0BD0E300F5971D /* ViewController.swift in Sources */,
+				6AF1CE851F0CE51800F5971D /* SettingTableViewController.swift in Sources */,
+				6AF1CE891F0D15BA00F5971D /* AddActivityDelegate.swift in Sources */,
+				6AF1CE511F0BD0E300F5971D /* MapViewController.swift in Sources */,
 				6AF1CE4F1F0BD0E300F5971D /* AppDelegate.swift in Sources */,
+				6AF1CE7F1F0BD5B500F5971D /* Activity.swift in Sources */,
+				6AF1CE831F0BE33C00F5971D /* AddActivityViewController.swift in Sources */,
+				6AF1CE7D1F0BD47E00F5971D /* ActivityTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

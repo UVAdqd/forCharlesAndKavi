@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol  AddActivityDelegate {
+    func didAddActivity(activity:Activity)
+    func defaultName() -> String?
+}

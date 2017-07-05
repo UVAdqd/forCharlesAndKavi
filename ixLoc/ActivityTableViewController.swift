@@ -8,11 +8,23 @@
 
 import UIKit
 
-class ActivityTableViewController: UITableViewController {
-
+class ActivityTableViewController: UITableViewController, AddActivityDelegate {
+    
+    
+    
+    
+    var activities: [Activity] = []
+    var test  = Activity(name: "Tony", description: "Yao Ming")
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        activities.append(test)
+        self.tableView.reloadData()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,24 +41,44 @@ class ActivityTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return activities.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "activityCell", for: indexPath)
 
         // Configure the cell...
-
+        cell.textLabel?.text = activities[indexPath.row].name
+        cell.detailTextLabel?.text = activities[indexPath.row].description
         return cell
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "navToAddActivity"{
+            let addActivityNavigationController = segue.destination as! UINavigationController
+            let addActivityViewController = addActivityNavigationController.topViewController as! AddActivityViewController
+            addActivityViewController.delegate = self
+    }
 
+    }
+    
+    func didAddActivity(activity:Activity){
+        self.activities.append(activity)
+        self.tableView?.reloadData()
+    }
+    
+    func defaultName() -> String?{
+        return "YaoMing"
+    }
+    
+
+}
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -92,4 +124,3 @@ class ActivityTableViewController: UITableViewController {
     }
     */
 
-}
